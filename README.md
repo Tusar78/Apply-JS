@@ -14,7 +14,7 @@ const inchToFoot = (num) => {
 let getFoot = inchToFoot(inches);
 alert(getFoot);
 ```
-## Foot to Inch Converted - Summery
+## Foot to Inch Converter - Summery
 - Multiply the length value by 12
 - 1 foot is equal 12 inches.
 
