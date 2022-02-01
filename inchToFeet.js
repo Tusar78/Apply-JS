@@ -6,3 +6,13 @@ const inchToFoot = (num) => {
 }
 let getFoot = inchToFoot(inches);
 alert(getFoot);
+
+
+// Foots to inches converter
+let foots = prompt('Foots', '0');
+const footToInches = (num) => {
+    let inches = num * 12;
+    return `${num} Foots = ${inches} Inches.`;
+}
+let getInches = footToInches(foots);
+alert(getInches);
