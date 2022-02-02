@@ -1,11 +1,13 @@
-## Inch to Foot Converter - Summery.
+# Some Basic Problem in JavaScript
 
-- divide the length value by 12
+## Inch to Foot Converter - Summery
+
+- divide the length value by 12.
 - 1 foot is equal 12 inches.
 
   > Solution
 
-```
+```JavaScript
 let inches = prompt('Inches', '0');
 const inchToFoot = (num) => {
     let foot = num / 12;
@@ -22,7 +24,7 @@ alert(getFoot);
 
 > Solution
 
-```
+```JavaScript
 let foots = prompt('Foots', '0');
 const footToInches = (num) => {
     let inches = num * 12;
@@ -39,7 +41,7 @@ alert(getInches);
 
 > Solution
 
-```
+```JavaScript
 const mile = prompt('How many miles?', '');
 const mileToKilo = (num) => {
     let kilo = (num * 1.609).toFixed(2);
@@ -51,12 +53,12 @@ alert(getKilo)
 
 ## Kilometer to Mile - Summery
 
-- For and approximate result, devide the length value by 1.609
+- For and approximate result, divide the length value by 1.609
 - 1 mile is equal to 1.609
 
 > Solution
 
-```
+```JavaScript
 const kilo = prompt('How many kilo', '');
 const kiloToMile = (num) => {
     let mile = (num / 1.609).toFixed(2);
@@ -70,7 +72,7 @@ alert(getMile);
 
 > Approach number one.
 
-```
+```JavaScript
 const minMax = (num1, num2, num3, minmax) => {
     if (minmax === 'max') {
         console.log(num1, num2, num3);
@@ -101,7 +103,7 @@ console.log(largestNumber);
 
 > Approach number two.
 
-```
+```JavaScript
 const minMax = (num1, num2, num3, minmax) => {
     if (minmax === 'max') {
         console.log(num1, num2, num3);
