@@ -139,3 +139,34 @@ const sumOfArray = (name, numbers) => {
 let summation = sumOfArray(name, marks);
 console.log(summation);
 ```
+
+## Largest or smaller number in an array
+
+```JavaScript
+const rollNumbers = [77, 10, 3, 9, 12, 45, 56];
+
+const largestInArray = (numbers, largeSmall) => {
+    let length = numbers.length
+      , lowHigh = numbers[0];
+
+    if (largeSmall === 'large') {
+        for (let i = 0; i < length; i++) {
+            let elem = numbers[i];
+            if (lowHigh < elem) {
+                lowHigh = elem;
+            }
+        }
+    } else if (largeSmall === 'small') {
+        for (let i = 0; i < length; i++) {
+            let elem = numbers[i];
+            if (lowHigh > elem) {
+                lowHigh = elem;
+            }
+        }
+    }
+    return lowHigh;
+}
+
+const largeSmallRoll = largestInArray(rollNumbers, 'small');
+console.log(largeSmallRoll);
+```
