@@ -170,3 +170,37 @@ const largestInArray = (numbers, largeSmall) => {
 const largeSmallRoll = largestInArray(rollNumbers, 'small');
 console.log(largeSmallRoll);
 ```
+
+## Fibonacci Number
+
+> The Fibonacci sequence is the series of numbers where each number is the sum of the two preceding numbers. For example, 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610
+
+![Fibonacci series image](./images/fibonacci-sequence.png)
+
+> Approach one
+
+```JavaScript
+let series = '0 1 '
+  , num = 0
+  , x = 0
+  , y = 1;
+
+for (let i = 0; i < 10; i++) {
+  num = x + y;
+  x = y;
+  y = num;
+  series += num + ' ';
+}
+
+console.log(series);
+```
+
+> Approach Two
+
+```JavaScript
+const fibo = [0, 1];
+for (let i = 2; i < 10; i++) {
+  fibo[i] = fibo[i - 1] + fibo[i - 2];
+}
+console.log(fibo);
+```
