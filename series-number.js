@@ -40,7 +40,7 @@
 // }
 // console.log(series);
 
-// Series 05: 0 1 1 2 3 5 8 13 21 - Fibonacci 
+// Series 05: 0 1 1 2 3 5 8 13 21 - Fibonacci
 
 // Approach one
 // let series = '0 1 '
@@ -61,8 +61,22 @@
 // 10nth = 9th + 8th
 // 15th = 14th + 13th
 
-const fibo = [0, 1];
-for (let i = 2; i < 10; i++) {
-  fibo[i] = fibo[i - 1] + fibo[i - 2];
-}
-console.log(fibo);
+// const fibo = [0, 1];
+// for (let i = 2; i < 10; i++) {
+//   fibo[i] = fibo[i - 1] + fibo[i - 2];
+// }
+// console.log(fibo);
+
+// Approach three"
+const fiboSeries = (num) => {
+  if (typeof num === 'number') {
+    const fibo = [0, 1];
+    for (let i = 2; i < num; i++) {
+      fibo[i] = fibo[i - 1] + fibo[i - 2];
+    }
+    return fibo;
+  }
+};
+
+const fifteenFibo = fiboSeries(15);
+console.log(fifteenFibo);
