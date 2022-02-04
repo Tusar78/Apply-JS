@@ -68,15 +68,26 @@
 // console.log(fibo);
 
 // Approach three"
-const fiboSeries = (num) => {
-  if (typeof num === 'number') {
-    const fibo = [0, 1];
-    for (let i = 2; i < num; i++) {
-      fibo[i] = fibo[i - 1] + fibo[i - 2];
-    }
-    return fibo;
-  }
-};
+// const fiboSeries = (num) => {
+//   if (typeof num === 'number') {
+//     const fibo = [0, 1];
+//     for (let i = 2; i < num; i++) {
+//       fibo[i] = fibo[i - 1] + fibo[i - 2];
+//     }
+//     return fibo;
+//   }
+// };
 
-const fifteenFibo = fiboSeries(15);
-console.log(fifteenFibo);
+// const fifteenFibo = fiboSeries(15);
+// console.log(fifteenFibo);
+
+
+var sentence = "I am hardworking. I am determined. I will be a web developer.";
+var count = 0;
+for(var i = 0; i < sentence.length; i++){
+  var letter = sentence[i];
+  if(letter == 'a'){
+    count++;
+  }
+}
+console.log(count)
