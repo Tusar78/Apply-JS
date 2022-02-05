@@ -17,13 +17,45 @@
 // }
 // console.log(grater80);
 
-const paperRequirements = (firstBookQuantity, secondBookQuantity, thirdBookQuantity) => {
-    const needPagesFirstBook = 100 * firstBookQuantity
-        , needPagesSecondBook = 200 * secondBookQuantity
-        , needPagesThirdBook = 300 * thirdBookQuantity;
+// const paperRequirements = (firstBookQuantity, secondBookQuantity, thirdBookQuantity) => {
+//     const needPagesFirstBook = 100 * firstBookQuantity
+//         , needPagesSecondBook = 200 * secondBookQuantity
+//         , needPagesThirdBook = 300 * thirdBookQuantity;
 
-    const totalPages = needPagesFirstBook + needPagesSecondBook + needPagesThirdBook;
-    return totalPages
+//     const totalPages = needPagesFirstBook + needPagesSecondBook + needPagesThirdBook;
+//     return totalPages
+// }
+// const papersNeed = paperRequirements(2, 1, 3);
+// console.log(papersNeed);
+
+
+// Big name in an array
+const friends = ['Rakibul Islam', 'Shariful Islam', 'Shuvo', 'Rochita Rubi', 'Sarmin Sultana', 'Selim Reza'];
+
+// const bestFriends = friends => {
+//     let name = '';
+//     for (const friend of friends) {
+//         if (friend.length > name.length) {
+//             name = friend;
+//         }
+//     }
+//     return name;
+// }
+// const getBigName = bestFriends(friends);
+// console.log(getBigName);
+
+// Small name in an array
+const bestFriends = friends => {
+    let name = friends[0]
+      , length = friends.length;
+    for (let i = 0; i < length; i++) {
+        const friend = friends[i];
+        if (friend.length < name.length) {
+            name = friend;
+        }        
+    }
+    return name;
 }
-const papersNeed = paperRequirements(2, 1, 3);
-console.log(papersNeed);
+
+const getSmallName = bestFriends(friends);
+console.log(getSmallName);
