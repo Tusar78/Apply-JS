@@ -45,17 +45,29 @@ const friends = ['Rakibul Islam', 'Shariful Islam', 'Shuvo', 'Rochita Rubi', 'Sa
 // console.log(getBigName);
 
 // Small name in an array
-const bestFriends = friends => {
-    let name = friends[0]
-      , length = friends.length;
-    for (let i = 0; i < length; i++) {
-        const friend = friends[i];
-        if (friend.length < name.length) {
-            name = friend;
-        }        
-    }
-    return name;
-}
+// const bestFriends = friends => {
+//     let name = friends[0]
+//       , length = friends.length;
+//     for (let i = 0; i < length; i++) {
+//         const friend = friends[i];
+//         if (friend.length < name.length) {
+//             name = friend;
+//         }        
+//     }
+//     return name;
+// }
 
-const getSmallName = bestFriends(friends);
-console.log(getSmallName);
+// const getSmallName = bestFriends(friends);
+// console.log(getSmallName);
+
+// Random array
+const numbers = [5, 4, 75, 84, -5, -45, -55, 47, 11, -74];
+let absNumber = [];
+for (const number of numbers) {
+    if (number >= 0) {
+        absNumber.push(number)
+    } else {
+        break;
+    }
+}
+console.log(absNumber);
