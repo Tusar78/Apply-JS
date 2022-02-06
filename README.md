@@ -224,3 +224,18 @@ let sideA = +prompt("Enter the value of : Side A"),
 const area = areaOfTriangle(sideA, sideB, sideC);
 alert(area);
 ```
+
+## Multiplication Table
+
+```JavaScript
+const multiplicationTable = number => {
+    let mulTable = '';
+    for (let i = 1; i <= 10; i++) {
+        mulTable += `${number} x ${i} = ${i * number} \n`;
+    }
+    return mulTable;
+}
+const userNeed = +prompt('Enter the valid number', '');
+const tableOfMultiplication = multiplicationTable(userNeed);
+console.log(tableOfMultiplication);
+```
