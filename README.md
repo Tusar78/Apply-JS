@@ -239,3 +239,14 @@ const userNeed = +prompt('Enter the valid number', '');
 const tableOfMultiplication = multiplicationTable(userNeed);
 console.log(tableOfMultiplication);
 ```
+
+## Feet To Mile
+
+```JavaScript
+const footToMiles = number => {
+    const mile = number / 5280;
+    return mile;
+}
+const getMiles = footToMiles(2000);
+console.log(getMiles);
+```
